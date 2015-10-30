@@ -1,0 +1,16 @@
+<div class="banner">
+    <!--img src="img/violet.jpg" alt=""-->
+    <h2>Vous êtes sur la page de contact storage</h2>
+</div>
+
+<table id="searchTextResults">
+  <th>Name </th><th>Email </th><th>Message </th>
+  <tr ng-repeat="contact in contacts">
+    <ng-if="contact != null">
+        <td>{{contact.name}}</td>
+        <td>{{contact.email}}</td>
+        <td>{{contact.message}}</td>
+    </ng-if>  
+  </tr>
+       
+</table> 

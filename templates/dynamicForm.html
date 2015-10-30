@@ -1,0 +1,17 @@
+<div class="banner">
+    <!--img src="img/bleu.jpg" alt=""-->
+    <h2>Vous êtes sur la page a porpos</h2>
+</div>
+<div class="row">
+  <form>
+    <table id="searchTextResults">
+      <tr  ng-repeat="field in fields">
+          <td>{{field.label}}</td>
+          <td><input value={{field.label}} type={{field.type}} placeholder={{field.placeholder}} maxlength={{field.maxlength}}  /></td>
+          
+      </tr>
+             
+     </table> 
+  
+  </form> 
+</div>

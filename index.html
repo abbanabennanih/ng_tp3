@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="app">
   <head>
     <meta charset="utf-8">
     <title>AngularJs In deep throat - IKNSA</title>
@@ -8,8 +8,36 @@
   </head>
   <body>
     <!-- Page Content -->
+    <header class="row-fluid">
+       <nav class="navbar navbar-inverse">
+
+         <div class="container-fluid">
+
+           <!-- Collect the nav links, forms, and other content for toggling -->
+           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+             <ul class="nav navbar-nav">
+               <li><a href="#/home">Accueil</a></li>
+               <li><a href="#/a-propos">A propos</a></li>
+               <li><a href="#/recrutement">Recrutement</a></li>
+               <li><a href="#/quotation">Demande de devis</a></li>
+               <li><a href="#/contact">Contact</a></li>
+               <li><a href="#/dynamic">Dynamic Form</a></li>
+               <li><a href="#/contactStorage">Dynamic Form</a></li>
+              </ul>
+           </div>
+         </div>
+       </nav>
+     </header>
+
+     <div class="row-fluid">
+      <main class="container-fluid">
+        <ng-view></ng-view>
+      </main>
+    </div>
+
     <!-- End Page Content -->
     <script src="scripts/angular.min.js"></script>
+    <script src="scripts/angular-route.js"></script>
     <script src="scripts/app.js"></script>
   </body>
 </html>
